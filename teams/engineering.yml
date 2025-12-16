@@ -20,7 +20,7 @@ agent_options:
 controls:
   macos_settings:
     custom_settings:
-      -path: /Users/maribellmorales/Documents/GitHub/SJ-gitops/lib/macos/disable-bluetooth-file-sharing.mobileconfig
+      - path: /Users/maribellmorales/Documents/GitHub/SJ-gitops/lib/macos/disable-bluetooth-file-sharing.mobileconfig
   macos_updates:
     deadline: "2026-10-31"    
     minimum_version: "26.0"
