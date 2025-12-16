@@ -22,7 +22,7 @@ controls:
     custom_settings:
       -path: /Users/maribellmorales/Documents/GitHub/SJ-gitops/lib/macos/disable-bluetooth-file-sharing.mobileconfig
   macos_updates:
-    deadline: "2025-10-31"    
+    deadline: "2026-10-31"    
     minimum_version: "26.0"
   scripts:
     - path: ../lib/macos/scripts/remove-zoom-artifacts.script.sh
