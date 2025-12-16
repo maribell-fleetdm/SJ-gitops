@@ -18,15 +18,21 @@ queries:
 agent_options:
   path: ../lib/agent-options.yml
 controls:
+  enable_disk_encryption: true
   macos_settings:
     custom_settings:
-      - path: /Users/maribellmorales/Documents/GitHub/SJ-gitops/lib/macos/disable-bluetooth-file-sharing.mobileconfig
+      - path: /Users/maribellmorales/Documents/GitHub/SJ-gitops/lib/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
+      - path: /Users/maribellmorales/Documents/GitHub/SJ-gitops/lib/macos/configuration-profiles/passcode-settings-ddm.json
   macos_updates:
     deadline: "2026-10-31"    
     minimum_version: "26.0"
   scripts:
     - path: ../lib/macos/scripts/remove-zoom-artifacts.script.sh
     - path: ../lib/macos/scripts/set-timezone.script.sh
+    - path: /Users/maribellmorales/Documents/GitHub/SJ-gitops/lib/macos/configuration-profiles/set-wallpaper.ps1
+  ipados_updates:
+    deadline: "2025-12-31"
+    minimum_version: "26.0"
 team_settings:
   secrets:
     - secret: "$FLEET_ENGINEERING_ENROLL_SECRET"

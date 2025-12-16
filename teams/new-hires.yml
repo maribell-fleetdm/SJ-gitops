@@ -18,6 +18,13 @@ queries:
 agent_options:
   path: ../lib/agent-options.yml
 controls:
+  mac_settings:
+    custom_settings: 
+      - path: /Users/maribellmorales/Documents/GitHub/SJ-gitops/lib/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
+  macos_settings: 
+    macos_updates:
+      deadline: "2025-10-21"
+      minimun_version: "26.0"
   scripts:
     - path: ../lib/macos/scripts/remove-zoom-artifacts.script.sh
     - path: ../lib/macos/scripts/set-timezone.script.sh
