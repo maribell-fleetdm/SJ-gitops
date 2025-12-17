@@ -7,7 +7,7 @@
 # Then add that secret to .github/workflows/workflow.yml as an env variable.
 # The secret name in the YAML file must match the secret name in GitHub Actions secrets.
 
-name: NEW_HIRES
+name: New Hires
 policies:
   - path: ../lib/macos/policies/macos-device-health.policies.yml
   - path: ../lib/windows/policies/windows-device-health.policies.yml
@@ -20,7 +20,7 @@ agent_options:
 controls:
   mac_settings:
     custom_settings: 
-      - path: ..lib/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
+      - path: ../lib/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
   macos_settings: 
     macos_updates:
       deadline: "2025-10-21"
